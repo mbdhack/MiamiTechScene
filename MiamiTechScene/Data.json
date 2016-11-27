@@ -9,7 +9,6 @@
             "website":"s://wyncode.co",
             "longitude" : 25.8012885,
             "latitude" :  -80.20237
-            
         },
         "Launchcode":{
             "city": "Miami",
@@ -18,9 +17,8 @@
             "postalCode": 10021,
             "phone number":"(314)-254-0107",
             "website":"https://www.launchcode.org",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
-            
+            "longitude" : 25.777725,
+            "latitude" :  -80.190863
         },
         "BLACKBELT CODING":{
             "city": "Miami",
@@ -29,9 +27,8 @@
             "postalCode": 33131,
             "phone number": "(786)-280-2607",
             "website":"http://www.blackbeltcoding.com/",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
-            
+            "longitude" : 25.761909,
+            "latitude" :  -80.191240
         },
         "Code Fever Miami":{
             "city": "Miami",
@@ -40,9 +37,8 @@
             "postalCode": 33127,
             "phone number":"(305)482-1832",
             "website":"http://www.codefevermiami.com/",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
-            
+            "longitude" : 25.789955,
+            "latitude" :  -80.133608
         },
         "Girls Who Code":{
             "city": "Miami",
@@ -53,7 +49,6 @@
             "website":"https://girlswhocode.com/",
             "longitude" : 25.8012885,
             "latitude" :  -80.20237
-            
         },
         "Iron Hack":{
             "city": "Miami",
@@ -62,9 +57,8 @@
             "postalCode": 33130,
             "phone number":"(305)-907-7086",
             "website":"https://www.ironhack.com/en",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
-            
+            "longitude" : 25.765968,
+            "latitude" :  -80.196177
         }
         
     }
