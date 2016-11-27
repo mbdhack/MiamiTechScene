@@ -1,0 +1,6 @@
+framework module Pods_MiamiTechScene {
+  umbrella header "Pods-MiamiTechScene-umbrella.h"
+
+  export *
+  module * { export * }
+}

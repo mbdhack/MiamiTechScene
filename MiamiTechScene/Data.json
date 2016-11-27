@@ -1,0 +1,72 @@
+{
+    "coding_schools": {
+        "Wyncode":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress": "400 NW 26th Street",
+            "postalCode": 33127,
+            "phone number":"(305)-720-2422",
+            "website":"s://wyncode.co",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        },
+        "Launchcode":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress": "",
+            "postalCode": 10021,
+            "phone number":"(314)-254-0107",
+            "website":"https://www.launchcode.org",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        },
+        "BLACKBELT CODING":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress": "1201 Brickell Ave, Suite #620",
+            "postalCode": 33131,
+            "phone number": "(786)-280-2607",
+            "website":"http://www.blackbeltcoding.com/",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        },
+        "Code Fever Miami":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress": "350 Lincoln Road, Miami",
+            "postalCode": 33127,
+            "phone number":"(305)482-1832",
+            "website":"http://www.codefevermiami.com/",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        },
+        "Girls Who Code":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress": "",
+            "postalCode":"",
+            "phone number":"(305)482-1832",
+            "website":"https://girlswhocode.com/",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        },
+        "Iron Hack":{
+            "city": "Miami",
+            "state": "FL",
+            "streetAddress":"120 SW 8th St",
+            "postalCode": 33130,
+            "phone number":"(305)-907-7086",
+            "website":"https://www.ironhack.com/en",
+            "longitude" : 25.8012885,
+            "latitude" :  -80.20237
+            
+        }
+        
+    }
+    
+}
