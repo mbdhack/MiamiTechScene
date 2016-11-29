@@ -12,31 +12,30 @@ import MapKit
 
 class ViewController: UIViewController ,MKMapViewDelegate {
     var instance = BaseClass()
-    var data = [Data]()
+    var data = [BaseClass]()
     @IBOutlet weak var mapkit: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-     // instance.getdatalink()
         instance.getdatalink()
         mapkit.delegate = self
-        data.append(instance.coorDinates)
-        print(data)
-        
+        onTheMap()
     }
     
-//    func onTheMap() {
-//        for item in instance.coorDinates {
-//         let schoolonecordinate = CLLocationCoordinate2D(latitude:instance. , longitude: CLLocationDegrees)
-//        
-//        }
-////         let schoolonecordinate = CLLocationCoordinate2D(latitude: , longitude: <#T##CLLocationDegrees#>)
-//        //span
-//        let latDelate : CLLocationDegrees = 0.01
-//        let longDelat : CLLocationDegrees = 0.01
-//        
-//    
-   // }
+    func onTheMap() {
+        for item in instance.coorDinates {
+            let annotation = MKPointAnnotation()
+            let schoolonecordinate = CLLocationCoordinate2D(latitude:item.latitude , longitude: item.longitude)
+            let latDelate : CLLocationDegrees = 0.01
+            let longDelat : CLLocationDegrees = 0.01
+            let schools = MKCoordinateSpan(latitudeDelta: latDelate, longitudeDelta: longDelat)
+            let region = MKCoordinateRegion(center: schoolonecordinate, span: schools)
+            mapkit.setRegion(region, animated: true)
+            annotation.title = item.website
+            annotation.coordinate = schoolonecordinate
+            mapkit.addAnnotation(annotation)
+        }
+        
+}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

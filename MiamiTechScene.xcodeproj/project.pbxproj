@@ -85,6 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643725321DEE1596008F9F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				643B36171DE922CD00F0C0BB /* BaseClass.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		643725331DEE15AE008F9F85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64A6E9D41DE90AE00083ED6A /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		643725341DEE15B8008F9F85 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				64A6E9D21DE90AE00083ED6A /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		643725351DEE15C4008F9F85 /* JSONDATA */ = {
+			isa = PBXGroup;
+			children = (
+				643B36151DE9196000F0C0BB /* Data.json */,
+			);
+			name = JSONDATA;
+			sourceTree = "<group>";
+		};
 		64A6E9C61DE90ADE0083ED6A = {
 			isa = PBXGroup;
 			children = (
@@ -110,15 +142,15 @@
 		64A6E9D11DE90AE00083ED6A /* MiamiTechScene */ = {
 			isa = PBXGroup;
 			children = (
-				64A6E9D21DE90AE00083ED6A /* AppDelegate.swift */,
-				64A6E9D41DE90AE00083ED6A /* ViewController.swift */,
+				643725341DEE15B8008F9F85 /* Delegates */,
+				643725331DEE15AE008F9F85 /* Controllers */,
 				64A6E9D61DE90AE10083ED6A /* Main.storyboard */,
 				64A6E9DC1DE90AE10083ED6A /* Assets.xcassets */,
 				64A6E9DE1DE90AE10083ED6A /* LaunchScreen.storyboard */,
 				64A6E9E11DE90AE10083ED6A /* Info.plist */,
 				64A6E9D91DE90AE10083ED6A /* MiamiTechScene.xcdatamodeld */,
-				643B36151DE9196000F0C0BB /* Data.json */,
-				643B36171DE922CD00F0C0BB /* BaseClass.swift */,
+				643725351DEE15C4008F9F85 /* JSONDATA */,
+				643725321DEE1596008F9F85 /* Model */,
 			);
 			path = MiamiTechScene;
 			sourceTree = "<group>";
