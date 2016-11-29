@@ -12,7 +12,7 @@ import MapKit
 
 class ViewController: UIViewController ,MKMapViewDelegate {
     var instance = BaseClass()
-    
+    var data = [Data]()
     @IBOutlet weak var mapkit: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,23 @@ class ViewController: UIViewController ,MKMapViewDelegate {
      // instance.getdatalink()
         instance.getdatalink()
         mapkit.delegate = self
+        data.append(instance.coorDinates)
+        print(data)
         
     }
     
-    func onTheMap() {
-    
-    }
+//    func onTheMap() {
+//        for item in instance.coorDinates {
+//         let schoolonecordinate = CLLocationCoordinate2D(latitude:instance. , longitude: CLLocationDegrees)
+//        
+//        }
+////         let schoolonecordinate = CLLocationCoordinate2D(latitude: , longitude: <#T##CLLocationDegrees#>)
+//        //span
+//        let latDelate : CLLocationDegrees = 0.01
+//        let longDelat : CLLocationDegrees = 0.01
+//        
+//    
+   // }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

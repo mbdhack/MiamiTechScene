@@ -10,25 +10,27 @@ import UIKit
 import SwiftyJSON
 
 class BaseClass: NSObject {
-    var schoolName = [[String:AnyObject]]()
+    struct Location {
+        var phoneNumber: Int
+        var website: String
+        var latitude: Double
+        var  longitude: Double
+    }
     var Data = [[String:AnyObject]]()
-    var latitudeArray: [Double] = []
-    var longitudeArray: [Double] = []
-    var coorDinates = [[Double]]()
-    var schoolNameLogitude = [[String:AnyObject]]()
-    var schoolNameLatitude = [[String:AnyObject]]()
+    var coorDinates = []()
+    
     func getdatalink () {
     let path : String  = Bundle.main.path(forResource: "Data", ofType: "json") as String!
     let jsonData = NSData(contentsOfFile: path) as NSData!
     let read = JSON(data:jsonData as! Data)
     for (_ , eachcode) in read["coding_schools"]{
-    let  latitude = eachcode["longitude"].double
-    let  longitude = eachcode["latitude"].double
-    latitudeArray.append(latitude!)
-    longitudeArray.append(longitude!)
+    var  latitude = eachcode["longitude"].double
+    var  longitude = eachcode["latitude"].double
+    var  phone_number = eachcode["phone number"].intValue
+    var  website = eachcode["website"].string
         }
-    coorDinates.append(latitudeArray)
-    coorDinates.append(longitudeArray)
+    coorDinates.append(Location(phoneNumber:  phone_number, website:website , latitude: latitude, longitude: longitude))
+   
     }
 }
 
