@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View View Controller-->
+        <!--Miami Tech Scene Map-->
         <scene sceneID="rea-CQ-669">
             <objects>
                 <viewController id="euo-hr-lsk" customClass="TableViewViewController" customModule="MiamiTechScene" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,6 +68,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="euo-hr-lsk" id="ILB-mZ-bdi"/>
+                                    <outlet property="delegate" destination="euo-hr-lsk" id="cTs-L6-UDp"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,13 +82,13 @@
                             <constraint firstAttribute="trailing" secondItem="MPt-bK-zp2" secondAttribute="trailing" id="zxD-2e-RCY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zB5-gc-77m"/>
+                    <navigationItem key="navigationItem" title="Miami Tech Scene Map" id="zB5-gc-77m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwS-BR-L6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2119" y="1669"/>
         </scene>
-        <!--View Controller-->
+        <!--Miami Tech Scene Map-->
         <scene sceneID="enh-od-Tet">
             <objects>
                 <viewController id="iM1-UD-tzd" customClass="ViewController" customModule="MiamiTechScene" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +130,7 @@
                             <constraint firstItem="22v-sP-2oO" firstAttribute="leading" secondItem="3a5-dr-9OD" secondAttribute="leading" constant="248" id="fhT-Eq-fhe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sOh-8v-JA8"/>
+                    <navigationItem key="navigationItem" title="Miami Tech Scene Map" id="sOh-8v-JA8"/>
                     <connections>
                         <outlet property="mapkit" destination="gsT-pQ-Qwa" id="fFU-mL-tjG"/>
                         <outlet property="swicthMapType" destination="22v-sP-2oO" id="XEg-JY-XMf"/>
@@ -135,6 +139,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7o-wN-37P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2119.1999999999998" y="897.30134932533736"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hh8-4d-7Ty">
+            <objects>
+                <viewController id="LTW-AY-CF7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dQJ-66-oIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZh-n7-R8d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUb-xa-wOC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaT-pA-BLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2964" y="897"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bu3-AM-1a7">
@@ -154,11 +176,11 @@
             </objects>
             <point key="canvasLocation" x="-687" y="1075"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation Controller-->
         <scene sceneID="5UP-xt-sGd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LNx-8C-ofd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="g8q-gb-3c6"/>
+                    <tabBarItem key="tabBarItem" title="" image="Map Marker Filled-50" id="g8q-gb-3c6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GpM-9P-Y8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -173,11 +195,11 @@
             </objects>
             <point key="canvasLocation" x="1180" y="897.30134932533736"/>
         </scene>
-        <!--Item 2-->
+        <!--Navigation Controller-->
         <scene sceneID="kk8-rO-Pxf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AP3-yh-auO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="44i-57-R7i"/>
+                    <tabBarItem key="tabBarItem" title="" image="List Filled-50" id="44i-57-R7i"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xht-BS-vdf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -193,4 +215,8 @@
             <point key="canvasLocation" x="1180" y="1670"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="List Filled-50" width="50" height="50"/>
+        <image name="Map Marker Filled-50" width="50" height="50"/>
+    </resources>
 </document>

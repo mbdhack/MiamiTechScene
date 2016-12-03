@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				643B36171DE922CD00F0C0BB /* BaseClass.swift */,
-				644C7F641DEED32800B633AA /* customPointAnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +140,7 @@
 		645FAAD61DF1665F00C12065 /* CustomNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				644C7F641DEED32800B633AA /* customPointAnotation.swift */,
 				645FAAD71DF16A1200C12065 /* CustomNav.swift */,
 				645FAAD91DF17CC700C12065 /* Customitem.swift */,
 			);
