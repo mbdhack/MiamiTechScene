@@ -1,66 +1,148 @@
 {
-    "coding_schools": {
-        "Wyncode":{
+    
+        "Wyncode": {
+            "name": "Wyncode",
             "city": "Miami",
             "state": "FL",
+            "type": "Bootcamp",
             "streetAddress": "400 NW 26th Street",
             "postalCode": 33127,
-            "phone number":"(305)-720-2422",
-            "website":"s://wyncode.co",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
+            "phone number": "(305)-720-2422",
+            "website": "s://wyncode.co",
+            "longitude": 25.8012885,
+            "latitude": -80.20237
         },
-        "Launchcode":{
+        "Launchcode": {
+            "name": "Launchcode",
             "city": "Miami",
             "state": "FL",
+            "type": "Bootcamp",
             "streetAddress": "",
             "postalCode": 10021,
-            "phone number":"(314)-254-0107",
-            "website":"https://www.launchcode.org",
-            "longitude" : 25.777725,
-            "latitude" :  -80.190863
+            "phone number": "(314)-254-0107",
+            "website": "https://www.launchcode.org",
+            "longitude": 25.777725,
+            "latitude": -80.190863
         },
-        "BLACKBELT CODING":{
+        "BLACKBELT CODING": {
+            "name": "Blackbelt Coding",
             "city": "Miami",
             "state": "FL",
+            "type": "Bootcamp",
             "streetAddress": "1201 Brickell Ave, Suite #620",
             "postalCode": 33131,
             "phone number": "(786)-280-2607",
-            "website":"http://www.blackbeltcoding.com/",
-            "longitude" : 25.761909,
-            "latitude" :  -80.191240
+            "website": "http://www.blackbeltcoding.com/",
+            "longitude": 25.761909,
+            "latitude": -80.191240
         },
-        "Code Fever Miami":{
+        "Code Fever Miami": {
+            "name": "Code Fever Miami",
             "city": "Miami",
             "state": "FL",
+            "type": "Bootcamp",
             "streetAddress": "350 Lincoln Road, Miami",
             "postalCode": 33127,
-            "phone number":"(305)482-1832",
-            "website":"http://www.codefevermiami.com/",
-            "longitude" : 25.789955,
-            "latitude" :  -80.133608
+            "phone number": "(305)482-1832",
+            "website": "http://www.codefevermiami.com/",
+            "longitude": 25.789955,
+            "latitude": -80.133608
         },
-        "Girls Who Code":{
+        "Girls Who Code": {
+            "name": "Girls Who Code",
             "city": "Miami",
             "state": "FL",
+            "type": "Bootcamp",
             "streetAddress": "",
-            "postalCode":"",
-            "phone number":"(305)482-1832",
-            "website":"https://girlswhocode.com/",
-            "longitude" : 25.8012885,
-            "latitude" :  -80.20237
+            "postalCode": "",
+            "phone number": "(305)482-1832",
+            "website": "https://girlswhocode.com/",
+            "longitude": 25.8012885,
+            "latitude": -80.20237
         },
-        "Iron Hack":{
+        "Iron Hack": {
+            "name": "Iron Hack",
             "city": "Miami",
             "state": "FL",
-            "streetAddress":"120 SW 8th St",
+            "type": "Bootcamp",
+            "streetAddress": "120 SW 8th St",
             "postalCode": 33130,
-            "phone number":"(305)-907-7086",
-            "website":"https://www.ironhack.com/en",
-            "longitude" : 25.765968,
-            "latitude" :  -80.196177
+            "phone number": "(305)-907-7086",
+            "website": "https://www.ironhack.com/en",
+            "longitude": 25.765968,
+            "latitude": -80.196177
+        },
+        "React Native Fundamentals": {
+            "name": "React Native Fundamentals",
+            "city": "Miami",
+            "state": "FL",
+            "type": "ed",
+            "streetAddress": "400 NW 26th",
+            "postalCode": 33127,
+            "phone number": "(601)-812-8166",
+            "website": "https://www.eventbrite.com/e/react-native-fundamentals-boston-tickets-28987866489",
+            "longitude": 25.801130,
+            "latitude": -80.202287
+        },
+        "4Geeks Academy": {
+            "name": "4Geeks Academy",
+            "city": "Miami",
+            "state": "FL",
+            "type": "ed",
+            "streetAddress": "9675 NW 117th Ave #405",
+            "postalCode": 33178,
+            "phone number": "(305) 814-2776",
+            "website": "http://www.4geeksacademy.com/",
+            "longitude": 25.861920,
+            "latitude": -80.385798
+        },
+        "Open English": {
+            "name": "Open English",
+            "city": "Miami",
+            "state": "FL",
+            "type": "ed",
+            "streetAddress": "2901 Florida Ave Suite 840",
+            "postalCode": 33133,
+            "phone number": "(855) 244-7008",
+            "website": "http://www.openenglish.com/",
+            "longitude": 25.729215,
+            "latitude": -80.240961
+        },
+       "MAGIC at Miami Dade": {
+           "name": "MAGIC at Miami Dade",
+           "city": "Miami",
+           "state": "FL",
+           "type": "ed",
+           "streetAddress": "315 NE 2nd Ave",
+           "postalCode": 33132,
+           "phone number": "(305)-237-8888",
+           "website": "http://magic.mdc.edu/",
+           "longitude": 25.777412,
+           "latitude":  -80.190140
+         },
+        "Florida International University (FIU) Pino Global Entrepreneurship Center": {
+            "name": "Florida International University (FIU) Pino Global Entrepreneurship Center",
+            "city": "Miami",
+            "state": "FL",
+            "type": "ed",
+            "streetAddress": "11200 SW 8th St",
+            "postalCode": 33199,
+            "phone number": "305-348-0148",
+            "website": "https://business.fiu.edu/centers/pino/",
+            "longitude": 25.760338,
+            "latitude":-80.371498
+        },
+        "MDC Idea Center": {
+            "name": "MDC Idea Center",
+            "city": "Miami",
+            "state": "FL",
+            "type": "ed",
+            "streetAddress": "315 NE 2nd Ave",
+            "postalCode": 33178,
+            "phone number": "(305)-237-7809",
+            "website": "http://theideacenter.co/",
+            "longitude": 25.777412,
+            "latitude":  -80.190140
         }
-        
-    }
     
 }

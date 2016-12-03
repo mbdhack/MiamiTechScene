@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		643B36161DE9196000F0C0BB /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 643B36151DE9196000F0C0BB /* Data.json */; };
 		643B36181DE922CD00F0C0BB /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B36171DE922CD00F0C0BB /* BaseClass.swift */; };
+		6449ECB21DF156CB00E1E284 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ECB11DF156CB00E1E284 /* TableViewViewController.swift */; };
+		6449ECB41DF157FF00E1E284 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ECB31DF157FF00E1E284 /* CustomTableViewCell.swift */; };
+		644C7F651DEED32800B633AA /* customPointAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C7F641DEED32800B633AA /* customPointAnotation.swift */; };
+		645FAAD81DF16A1200C12065 /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FAAD71DF16A1200C12065 /* CustomNav.swift */; };
+		645FAADA1DF17CC700C12065 /* Customitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FAAD91DF17CC700C12065 /* Customitem.swift */; };
 		64A6E9D31DE90AE00083ED6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6E9D21DE90AE00083ED6A /* AppDelegate.swift */; };
 		64A6E9D51DE90AE00083ED6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6E9D41DE90AE00083ED6A /* ViewController.swift */; };
 		64A6E9D81DE90AE10083ED6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A6E9D61DE90AE10083ED6A /* Main.storyboard */; };
@@ -42,6 +47,11 @@
 		487D734DADF5584E8DF81F16 /* Pods-MiamiTechScene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiamiTechScene.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiamiTechScene/Pods-MiamiTechScene.release.xcconfig"; sourceTree = "<group>"; };
 		643B36151DE9196000F0C0BB /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		643B36171DE922CD00F0C0BB /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		6449ECB11DF156CB00E1E284 /* TableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
+		6449ECB31DF157FF00E1E284 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		644C7F641DEED32800B633AA /* customPointAnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customPointAnotation.swift; sourceTree = "<group>"; };
+		645FAAD71DF16A1200C12065 /* CustomNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNav.swift; sourceTree = "<group>"; };
+		645FAAD91DF17CC700C12065 /* Customitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customitem.swift; sourceTree = "<group>"; };
 		64A6E9CF1DE90AE00083ED6A /* MiamiTechScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiamiTechScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A6E9D21DE90AE00083ED6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A6E9D41DE90AE00083ED6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				643B36171DE922CD00F0C0BB /* BaseClass.swift */,
+				644C7F641DEED32800B633AA /* customPointAnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -97,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				64A6E9D41DE90AE00083ED6A /* ViewController.swift */,
+				6449ECB11DF156CB00E1E284 /* TableViewViewController.swift */,
+				645FAAD51DF1660D00C12065 /* CustomTableViewCell */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +128,23 @@
 				643B36151DE9196000F0C0BB /* Data.json */,
 			);
 			name = JSONDATA;
+			sourceTree = "<group>";
+		};
+		645FAAD51DF1660D00C12065 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6449ECB31DF157FF00E1E284 /* CustomTableViewCell.swift */,
+			);
+			name = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		645FAAD61DF1665F00C12065 /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				645FAAD71DF16A1200C12065 /* CustomNav.swift */,
+				645FAAD91DF17CC700C12065 /* Customitem.swift */,
+			);
+			name = CustomNavigation;
 			sourceTree = "<group>";
 		};
 		64A6E9C61DE90ADE0083ED6A = {
@@ -151,6 +181,7 @@
 				64A6E9D91DE90AE10083ED6A /* MiamiTechScene.xcdatamodeld */,
 				643725351DEE15C4008F9F85 /* JSONDATA */,
 				643725321DEE1596008F9F85 /* Model */,
+				645FAAD61DF1665F00C12065 /* CustomNavigation */,
 			);
 			path = MiamiTechScene;
 			sourceTree = "<group>";
@@ -378,7 +409,12 @@
 			files = (
 				64A6E9DB1DE90AE10083ED6A /* MiamiTechScene.xcdatamodeld in Sources */,
 				64A6E9D51DE90AE00083ED6A /* ViewController.swift in Sources */,
+				644C7F651DEED32800B633AA /* customPointAnotation.swift in Sources */,
+				6449ECB41DF157FF00E1E284 /* CustomTableViewCell.swift in Sources */,
+				645FAAD81DF16A1200C12065 /* CustomNav.swift in Sources */,
+				645FAADA1DF17CC700C12065 /* Customitem.swift in Sources */,
 				64A6E9D31DE90AE00083ED6A /* AppDelegate.swift in Sources */,
+				6449ECB21DF156CB00E1E284 /* TableViewViewController.swift in Sources */,
 				643B36181DE922CD00F0C0BB /* BaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +488,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -502,6 +539,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -531,9 +569,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1A6A13A92A3D64B6370F612 /* Pods-MiamiTechScene.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiamiTechScene/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = da.MiamiTechScene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -545,9 +584,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 487D734DADF5584E8DF81F16 /* Pods-MiamiTechScene.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiamiTechScene/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = da.MiamiTechScene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
