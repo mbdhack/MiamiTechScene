@@ -14,7 +14,6 @@ class BaseClass: NSObject,MKAnnotation {
     let annotation = MKPointAnnotation()
     let latDelate : CLLocationDegrees = 0.09
     let longDelat : CLLocationDegrees = 0.09
-    let section = ["Bootcamp", "education"]
     let sectionItem = [[String:Any]]()
     var latitude: Double
     var longitude:Double
@@ -33,35 +32,29 @@ class BaseClass: NSObject,MKAnnotation {
         var latitude: Double
         var longitude: Double
         var name : String
-    }
-    
-    struct sectionItemData {
-        var SchoolNameBootCamp: String
-        var SchoolNameEducation: String
+        var typeSchool : String
     }
     var coorDinates = [Location]()
+    var educationArray = [Location]()
+    var bootcampArray = [Location]()
     func getdatalink () {
     let path : String  = Bundle.main.path(forResource: "Data", ofType: "json") as String!
     let jsonData = NSData(contentsOfFile: path) as NSData?
     let read = JSON(data:jsonData as! Data)
     for (_ , eachcode) in read{
+        let test = "ed"
         let latitude = eachcode["longitude"].double
         let longitude = eachcode["latitude"].double
         let name = eachcode["name"].string
         let website = eachcode["website"].string
         let phonenumber = eachcode["phone number"].string
-        coorDinates.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!))
+        let typeSchool = eachcode["type"].string
+        coorDinates.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))
+        if (typeSchool?.contains(test))!{
+        educationArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))}
+    else{bootcampArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))}
         }
-        print(coorDinates)
-   
+
     }
 }
-
-//class GetItemByType: BaseClass {
-//    override func getdatalink() {
-//        for eachCode  in read {
-//        
-//        }
-//    }
-
 

@@ -56,26 +56,29 @@ class ViewController: UIViewController ,MKMapViewDelegate {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
     }
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if !(annotation is customPointAnotation) {
-            return nil
-        }
-        let reuseId = "test"
-        var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
-        if anView == nil {
-            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-        }
-        else {
-            anView?.annotation = annotation
-        }
-        anView?.image = UIImage(named:"annotation_pin")
-        anView?.backgroundColor = UIColor.clear
-        anView?.canShowCallout = true
-        return anView
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        if !(annotation is customPointAnotation) {
+//            return nil
+//        }
+//        let reuseId = "test"
+//        var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
+//        if anView == nil {
+//            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+//        }
+//        else {
+//            anView?.annotation = annotation
+//        }
+//        anView?.image = UIImage(named:"annotation_pin")
+//        anView?.backgroundColor = UIColor.clear
+//        anView?.canShowCallout = true
+//        return anView
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        
     }
     // MARK: - Button Action
     @IBAction func swicthMapTypeAction(_ sender: UISegmentedControl) {

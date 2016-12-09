@@ -69,8 +69,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="euo-hr-lsk" id="ILB-mZ-bdi"/>
-                                    <outlet property="delegate" destination="euo-hr-lsk" id="cTs-L6-UDp"/>
+                                    <outlet property="dataSource" destination="euo-hr-lsk" id="C3P-GE-xSg"/>
+                                    <outlet property="delegate" destination="euo-hr-lsk" id="yvD-cZ-SnF"/>
                                 </connections>
                             </tableView>
                         </subviews>
