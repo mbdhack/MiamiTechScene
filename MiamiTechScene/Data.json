@@ -10,7 +10,8 @@
             "phone number": "(305)-720-2422",
             "website": "s://wyncode.co",
             "longitude": 25.8012885,
-            "latitude": -80.20237
+            "latitude": -80.20237,
+            "Description":"Launched at a Refresh Miami event in early 2014, Wyncode is Florida’s First and Leading Coding Bootcamp. With two campuses located in Wynwood and FATvillage in Ft. Lauderdale, Wyncode has graduated hundreds of developers working in South Florida’s up and coming tech ecosystem. If you’re interested in learning to code, or want to hire a developer, please get in touch with us!"
         },
         "Launchcode": {
             "name": "Launchcode",
@@ -22,7 +23,8 @@
             "phone number": "(314)-254-0107",
             "website": "https://www.launchcode.org",
             "longitude": 25.777725,
-            "latitude": -80.190863
+            "latitude": -80.190863,
+            "Description": "LaunchCode is a nonprofit organization dedicated to creating economic opportunity for aspiring developers through job placement and training in technology.Through our program, we aim to solve two problems:First, millions of Americans are unemployed, and many more are stuck in low-wage job cycles which leave them struggling to find jobs that offer livable salaries, employable skills, and a chance for advancement.American businesses also have a problem —there just isn’t enough tech talent to match the growing demand. The US Department of Labor predicts this situation will only worsen, leaving 1 million programming jobs unfilled by 2020."
         },
         "BLACKBELT CODING": {
             "name": "Blackbelt Coding",
@@ -34,7 +36,8 @@
             "phone number": "(786)-280-2607",
             "website": "http://www.blackbeltcoding.com/",
             "longitude": 25.761909,
-            "latitude": -80.191240
+            "latitude": -80.191240,
+             "Description":"Blackbelt Coding is a Miami based Coding Bootcamp that offers a 12 week part time program for only $6,000. We believe that coding is the language of the future, that everybody can and should learn how to code, and that it should be accessible and not a luxury ."
         },
         "Code Fever Miami": {
             "name": "Code Fever Miami",
@@ -46,7 +49,8 @@
             "phone number": "(305)482-1832",
             "website": "http://www.codefevermiami.com/",
             "longitude": 25.789955,
-            "latitude": -80.133608
+            "latitude": -80.133608,
+            "Description":"The mission of Code Fever is to inspire more underserved minority students between the ages of 13 to 21 to code, build and create technology enterprises within their communities, close the gap in technology education, and become leaders in STEM fields by increasing the number of young startup founders."
         },
         "Girls Who Code": {
             "name": "Girls Who Code",
@@ -58,8 +62,9 @@
             "phone number": "(305)482-1832",
             "website": "https://girlswhocode.com/",
             "longitude": 25.8012885,
-            "latitude": -80.20237
-        },
+            "latitude": -80.20237,
+            "Description":"Girls Who Code is a national nonprofit working to close the gender gap in the technology sector. Its programs work to educate, inspire, and equip high school girls with the skills and resources to pursue opportunities in computing fields."
+         },
         "Iron Hack": {
             "name": "Iron Hack",
             "city": "Miami",
@@ -70,7 +75,8 @@
             "phone number": "(305)-907-7086",
             "website": "https://www.ironhack.com/en",
             "longitude": 25.765968,
-            "latitude": -80.196177
+            "latitude": -80.196177,
+            "Description":"Ironhack is an international coding boot camp that believes the best way to learn how to do something, is by actually doing it. This ideology is reflected in its teaching practices, which consist of eight-week immersive programming courses aimed to graduate students as full-stack junior web developers. Ironhack has three locations in Barcelona, Madrid and Miami."
         },
         "React Native Fundamentals": {
             "name": "React Native Fundamentals",
@@ -82,7 +88,8 @@
             "phone number": "(601)-812-8166",
             "website": "https://www.eventbrite.com/e/react-native-fundamentals-boston-tickets-28987866489",
             "longitude": 25.801130,
-            "latitude": -80.202287
+            "latitude": -80.202287,
+            "Description":"In two days, we will jump right into the world of real React Native development, covering everything you need to know to get up and running in the shortest amount of time possible. Whether coming from the world of web development or native application development, this course will lay the foundation you need to know to get started building apps using React Native"
         },
         "4Geeks Academy": {
             "name": "4Geeks Academy",
@@ -94,7 +101,8 @@
             "phone number": "(305) 814-2776",
             "website": "http://www.4geeksacademy.com/",
             "longitude": 25.861920,
-            "latitude": -80.385798
+            "latitude": -80.385798,
+            "Description":"4Geeks is the place to learn and evolve your coding skills. We offer several coding courses, coding mentoring, and a special hub for experienced and junior coders.Our courses vary from Learn To Code, Front-end web development, WordPress, nodejs, etc."
         },
         "Open English": {
             "name": "Open English",
@@ -106,7 +114,8 @@
             "phone number": "(855) 244-7008",
             "website": "http://www.openenglish.com/",
             "longitude": 25.729215,
-            "latitude": -80.240961
+            "latitude": -80.240961,
+            "Description":"Open English is a leading Education Technology company focused on English language learning for the Latin American and U.S. Hispanic markets. The company was founded in 2007 to reinvent the way to teach English online, to meet the needs of busy working professionals. The platform offers on-demand content as well as personalized, live classes 24 hours a day, 7 days a week, with teachers who are all native English speakers. Students of Open English enjoy a unique, practical and fun learning experience that caters to their own schedule and pace.Today, the company offers its online English classes to over 100,000 students all over Latin America – including Brazil – and to the Spanish-speaking community in the United States. Open English offices are located in Miami, Bogota, Sao Paulo, Caracas and Buenos Aires.The company has been featured in the Wall Street Journal, CNN en Español, NBC, and many Latin American media outlets. To date, Open English has raised $120M in funding – the third highest in Ed Tech history and has been named by PitchBook as the fifth most valuable Ed Tech company in the world."
         },
        "MAGIC at Miami Dade": {
            "name": "MAGIC at Miami Dade",
@@ -118,7 +127,8 @@
            "phone number": "(305)-237-8888",
            "website": "http://magic.mdc.edu/",
            "longitude": 25.777412,
-           "latitude":  -80.190140
+           "latitude":  -80.190140,
+           "Description":"The mission of Code Fever is to inspire more underserved minority students between the ages of 13 to 21 to code, build and create technology enterprises within their communities, close the gap in technology education, and become leaders in STEM fields by increasing the number of young startup founders."
          },
         "Florida International University (FIU) Pino Global Entrepreneurship Center": {
             "name": "Florida International University (FIU) Pino Global Entrepreneurship Center",
@@ -130,7 +140,8 @@
             "phone number": "305-348-0148",
             "website": "https://business.fiu.edu/centers/pino/",
             "longitude": 25.760338,
-            "latitude":-80.371498
+            "latitude":-80.371498,
+            "Description":"The Florida International University College of Business remains worlds ahead in preparing Undergraduate and Graduate Business students, as well as, life-long executive learners for leadership roles in the global market."
         },
         "MDC Idea Center": {
             "name": "MDC Idea Center",
@@ -142,7 +153,8 @@
             "phone number": "(305)-237-7809",
             "website": "http://theideacenter.co/",
             "longitude": 25.777412,
-            "latitude":  -80.190140
+            "latitude":  -80.190140,
+            "Description":"Miami Dade College is the largest and most diverse college in the nation. With seven campuses, two centers, and more than 165,000 students from across the world, the College offers over 300 programs of study and several degree options, including vocational, associate, and baccalaureate degrees. MDC features numerous Continuing Education classes, online credit classes through the Virtual College, the New World School of the Arts, the School for Advanced Studies, The Honors College and Dual Enrollment."
         }
     
 }

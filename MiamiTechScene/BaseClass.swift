@@ -33,10 +33,12 @@ class BaseClass: NSObject,MKAnnotation {
         var longitude: Double
         var name : String
         var typeSchool : String
+        var description : String
     }
     var coorDinates = [Location]()
     var educationArray = [Location]()
     var bootcampArray = [Location]()
+    var generalArray = [Location]()
     func getdatalink () {
     let path : String  = Bundle.main.path(forResource: "Data", ofType: "json") as String!
     let jsonData = NSData(contentsOfFile: path) as NSData?
@@ -49,11 +51,16 @@ class BaseClass: NSObject,MKAnnotation {
         let website = eachcode["website"].string
         let phonenumber = eachcode["phone number"].string
         let typeSchool = eachcode["type"].string
-        coorDinates.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))
+        let description = eachcode["Description"].string
+        coorDinates.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool! , description : description!))
         if (typeSchool?.contains(test))!{
-        educationArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))}
-    else{bootcampArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!))}
+        educationArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool! , description : description!))}
+    else{bootcampArray.append(Location(phoneNumber :phonenumber!,website: website!, latitude: latitude!, longitude:longitude! , name:name!,typeSchool:typeSchool!, description : description!))}
         }
+        
+        generalArray += educationArray
+        generalArray += bootcampArray
+      //  print(generalArray)
 
     }
 }

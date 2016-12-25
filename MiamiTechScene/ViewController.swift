@@ -14,8 +14,7 @@ class ViewController: UIViewController ,MKMapViewDelegate {
     var instance = BaseClass(latitude: 0.0, longitude: 0.0)
     let info1 = customPointAnotation()
     var pointAnnotation:customPointAnotation!
-    var identifierString = "identifier"
-    var iconPictureRight = "Info-48"
+    
     
     @IBOutlet weak var swicthMapType: UISegmentedControl!
     @IBOutlet weak var mapkit: MKMapView! {
@@ -28,10 +27,10 @@ class ViewController: UIViewController ,MKMapViewDelegate {
         super.viewDidLoad()
         instance.getdatalink()
         onTheMap()
-        tabBarController?.tabBar.barTintColor = UIColor.purple
+        tabBarController?.tabBar.barTintColor = UIColor.white
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
         self.title = nil;
-        navigationController?.navigationBar.barTintColor = UIColor.purple
+        navigationController?.navigationBar.barTintColor = UIColor.white
         setUIbarButtonWithImage (imagename : iconPictureRight)
         // let info1 = customPointAnotation()
         //info1.pinCustomImageName = "annotation_pin"
@@ -56,23 +55,6 @@ class ViewController: UIViewController ,MKMapViewDelegate {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
     }
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        if !(annotation is customPointAnotation) {
-//            return nil
-//        }
-//        let reuseId = "test"
-//        var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
-//        if anView == nil {
-//            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-//        }
-//        else {
-//            anView?.annotation = annotation
-//        }
-//        anView?.image = UIImage(named:"annotation_pin")
-//        anView?.backgroundColor = UIColor.clear
-//        anView?.canShowCallout = true
-//        return anView
-//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
