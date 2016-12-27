@@ -60,6 +60,9 @@ class BaseClass: NSObject,MKAnnotation {
         
         generalArray += educationArray
         generalArray += bootcampArray
+        generalArray.sort{
+        $0.name < $1.name
+        }
       //  print(generalArray)
 
     }

@@ -16,8 +16,10 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
      var holder3 = [String]()
      var nameSender :String = ""
      var phoneSender : String = ""
-     var website : String = ""
+     var websitePass : String = ""
      var descriSender: String = ""
+    var globalPass : String = ""
+    var imagePass : String = ""
     
     struct HolderData {
         var name : String
@@ -35,7 +37,8 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
         fecthData ()
         self.tableview.contentInset = UIEdgeInsetsMake(-20, 0, -20, 0);
        //poisition (pos: nameSender)
-        passDataVC(name: nameSender)
+      //  passDataVC(name: nameSender)
+        image.sort { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
         
     }
 
@@ -58,7 +61,9 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
         return 1
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       print(nameSender)
        return  holder2.count
+    
     }
     
     
@@ -77,38 +82,35 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      nameSender = holder2[indexPath.row]
-        
-       
-        
+     
     }
     
    
-    func passDataVC (name : String){
-    for item in holder2{
-        for item2 in holder {
-                    nameSender = item2.name
-                phoneSender = item2.phone
-                website = item2.website
-                descriSender = item2.textdescription
-                }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "OpenDetailView" {
+            if let indexPath = self.tableview.indexPathForSelectedRow {
+                let controller = segue.destination as! DetialViewVC
+                globalPass =  holder2[indexPath.row]
+                imagePass = image[indexPath.row]
+                controller.selectedName = globalPass
+                    for item in holder {
+                        if globalPass == item.name {
+                            phoneSender = item.phone
+                            websitePass = item.website
+                            descriSender = item.textdescription
+                        }
+                    }
+                controller.holderDetailWebiste = websitePass
+                controller.holderDetialPhone = phoneSender
+                controller.desc = descriSender
+                controller.imageReceiver  = imagePass
+                print(holder2[indexPath.row])
             }
-        
-    
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier ==  "OpenDetailView" {
-            let DetialVc = segue.destination as! DetialViewVC
-            
-             DetialVc.holderDetail   = nameSender
-             DetialVc.holderDetailWebiste = website
-             DetialVc.holderDetialPhone = phoneSender
-             DetialVc.desc = description
-            
-            
-        
         }
-    
     }
+        
     
-  }
+    
+    
+    
+}

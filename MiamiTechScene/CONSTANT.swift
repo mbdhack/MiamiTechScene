@@ -9,7 +9,8 @@
 import Foundation
 
 let CellIdentifier = "Cell"
-var image = ["miamidade_IDEACenter","Open-English-Logo_og","Magic","FIU","4geeksacademy","l_react-native-logo","codefever","launchcode-logo","wyncode","iron_hack","BLACK-BELT","Girls-Who-Code-1"]
+var image = ["miamidade_IDEACenter","open-English-Logo_og","4geeksacademy","fIU","magic","react-native-logo","codefever","wyncode","launchcode-logo","aardvarkCompare","beacon Council","bareye","miami Downtown Development Authority (Miami DDA)","iron_hack","bLACK-BELT","girls-Who-Code-1"]
+
 var identifierString = "identifier"
 var iconPictureRight = "Info-48"
 var DetailViewIdentifer = "OpenDetailView"

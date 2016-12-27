@@ -155,6 +155,57 @@
             "longitude": 25.777412,
             "latitude":  -80.190140,
             "Description":"Miami Dade College is the largest and most diverse college in the nation. With seven campuses, two centers, and more than 165,000 students from across the world, the College offers over 300 programs of study and several degree options, including vocational, associate, and baccalaureate degrees. MDC features numerous Continuing Education classes, online credit classes through the Virtual College, the New World School of the Arts, the School for Advanced Studies, The Honors College and Dual Enrollment."
-        }
-    
+        },
+        "Beacon Council": {
+        "name": "Beacon Council",
+        "city": "Miami",
+        "state": "FL",
+        "type": "gov",
+        "streetAddress": "80 SW 8th St",
+        "postalCode": 33130,
+        "phone number": "(305)-579-1300",
+        "website": "http://www.beaconcouncil.com/",
+        "longitude": 25.765690,
+        "latitude": -80.194892,
+        "Description":"The Beacon Council facilitates local, national and international business growth and expansion programs, helping companies of all sizes in diverse industries achieve their goals.Since its creation in 1985, The Beacon Council has completed more than 1,000 new location and expansion projects, for a long list of companies, such as Wells Fargo Advisors, Discovery Network-Latin America, BD Biosciences, Federal Express, Telefonica, Burger King, Ryder System, Inc. and Visa Inc.Today, The Beacon Council continues to advance community’s objectives through a carefully planned action-oriented agenda developed in collaboration with Miami-Dade government, education, business and civic leaders."
+        },
+        "Miami Downtown Development Authority (Miami DDA)": {
+        "name": "Miami Downtown Development Authority (Miami DDA)",
+        "city": "Miami",
+        "state": "FL",
+        "type": "gov",
+        "streetAddress": "200 S. Biscayne Blvd",
+        "postalCode": 33131,
+        "phone number": "(305)-579-6675",
+        "website": "http://miamidda.com/",
+        "longitude": 25.772121,
+        "latitude":  -80.188015,
+        "Description":"The Miami Downtown Development Authority (DDA) is committed to improving the quality of life for businesses, employees, residents, and visitors in downtown Miami. As an independent agency of the City of Miami, the Miami DDA supports business growth, infrastructure improvements, and services for Downtown Miami residents and stakeholders. In addition to its programs and initiatives, the Miami DDA is partnering with the City and other government entities to strengthen Downtown Miami’s position as an international center for commerce, culture, and tourism. The organization is governed by a 15-member board comprised of three public appointees and 12 downtown property owners, residents and/or workers."
+        },
+        "BarEye": {
+        "name": "BarEye",
+        "city": "Miami",
+        "state": "FL",
+        "type": "startUp",
+        "streetAddress": "4141 NE 2nd Ave #203b",
+        "postalCode": 33137,
+        "phone number": "(305)-330-1401",
+        "website": "http://bareye.com/",
+        "longitude": 25.814253,
+        "latitude":   -80.191258,
+        "Description":"Bareye is a better way to buy drinks.No wallet, no tab, faster service.Place your order using the bareye kiosk right on top of the bar and pay for your drinks on the spot."
+        },
+        "AardvarkCompare": {
+        "name": "AardvarkCompare",
+        "city": "Miami",
+        "state": "FL",
+        "type": "startUp",
+        "streetAddress": "Minorca Avenue, Coral Gables",
+        "postalCode": 33134,
+        "phone number": "",
+        "website": "https://aardvarkcompare.com/",
+        "longitude":25.753194,
+        "latitude":  -80.270273,
+        "Description":"AardvarkCompare brings world-class insurance to our customers, so they can travel with confidence We treat our partners and suppliers fairly, and look to build lifetime relationships.We nurture our staff, and treat them with love and compassion.We work hard in our community, pay our taxes, and support local businesses when possible.Finally, we donate 10% of our profits each and every year to support our Aardvark Kids of Heroes™ charity partners.We will be supporting Special Operations Warrior Foundation, a truly inspirational charity.Please enjoy getting to know us through our web-site. Next time you are ready to travel, we would hope that you think of us."
+    }
 }
