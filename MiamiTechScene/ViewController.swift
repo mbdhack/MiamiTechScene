@@ -14,8 +14,7 @@ class ViewController: UIViewController ,MKMapViewDelegate {
     var instance = BaseClass(latitude: 0.0, longitude: 0.0)
     let info1 = customPointAnotation()
     var pointAnnotation:customPointAnotation!
-    
-    
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var swicthMapType: UISegmentedControl!
     @IBOutlet weak var mapkit: MKMapView! {
         didSet {
@@ -30,10 +29,10 @@ class ViewController: UIViewController ,MKMapViewDelegate {
         tabBarController?.tabBar.barTintColor = UIColor.white
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
         self.title = nil;
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 10.00)
+        tabBarController?.tabBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
         setUIbarButtonWithImage (imagename : iconPictureRight)
-        // let info1 = customPointAnotation()
-        //info1.pinCustomImageName = "annotation_pin"
+        self.searchBar.endEditing(true)
     }
     // MARK: - Mapkit Delegate
     func onTheMap() {

@@ -9,26 +9,28 @@
 import UIKit
 
 class TableViewViewController: UIViewController ,UITableViewDataSource , UITableViewDelegate {
+    
+    
+    
+    @IBOutlet weak var serachBar: UISearchBar!
+    
     @IBOutlet weak var tableview: UITableView!
      var enterI = BaseClass(latitude: 0.0, longitude: 0.0)
-    
      var holder2 = [String]()
      var holder3 = [String]()
      var nameSender :String = ""
      var phoneSender : String = ""
      var websitePass : String = ""
      var descriSender: String = ""
-    var globalPass : String = ""
-    var imagePass : String = ""
-    
-    struct HolderData {
+     var globalPass : String = ""
+     var imagePass : String = ""
+     struct HolderData {
         var name : String
         var website : String
         var phone : String
         var textdescription : String
     }
-    
-     var holder = [HolderData]()
+    var holder = [HolderData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +38,9 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
         enterI.getdatalink()
         fecthData ()
         self.tableview.contentInset = UIEdgeInsetsMake(-20, 0, -20, 0);
-       //poisition (pos: nameSender)
-      //  passDataVC(name: nameSender)
-        image.sort { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
-        
+        navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
+        tabBarController?.tabBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
+        self.serachBar.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,14 +61,12 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        print(nameSender)
        return  holder2.count
     
     }
-    
-    
- func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! CustomTableViewCell
     
         let holder_city =   holder2[indexPath.row]
@@ -76,17 +75,14 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
 
         return cell
     }
- func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      nameSender = holder2[indexPath.row]
      
     }
-    
-   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "OpenDetailView" {
             if let indexPath = self.tableview.indexPathForSelectedRow {
                 let controller = segue.destination as! DetialViewVC
