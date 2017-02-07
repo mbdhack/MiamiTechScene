@@ -10,24 +10,22 @@ import UIKit
 
 class TableViewViewController: UIViewController ,UITableViewDataSource , UITableViewDelegate {
     
-    
-    
     @IBOutlet weak var serachBar: UISearchBar!
-    
     @IBOutlet weak var tableview: UITableView!
      var enterI = BaseClass(latitude: 0.0, longitude: 0.0)
      var holder2 = [String]()
      var holder3 = [String]()
-     var nameSender :String = ""
+     var nameSender :  String = ""
      var phoneSender : String = ""
      var websitePass : String = ""
      var descriSender: String = ""
-     var globalPass : String = ""
-     var imagePass : String = ""
+     var globalPass :  String = ""
+     var imagePass :   String = ""
+     var filterData = [String]()
      struct HolderData {
-        var name : String
+        var name :    String
         var website : String
-        var phone : String
+        var phone :   String
         var textdescription : String
     }
     var holder = [HolderData]()
@@ -38,9 +36,11 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
         enterI.getdatalink()
         fecthData ()
         self.tableview.contentInset = UIEdgeInsetsMake(-20, 0, -20, 0);
-        navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
-        tabBarController?.tabBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
+//        navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
+//        tabBarController?.tabBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
         self.serachBar.endEditing(true)
+        filterData = holder2
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,13 +63,13 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        print(nameSender)
-       return  holder2.count
+       return filterData.count
     
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! CustomTableViewCell
     
-        let holder_city =   holder2[indexPath.row]
+        let holder_city =   filterData[indexPath.row]
         cell.schoolNameLAbel.text =  String(describing: holder_city)
         cell.imageview.image = UIImage(named:image[indexPath.row])
 
@@ -79,14 +79,14 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
         return 100.0
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     nameSender = holder2[indexPath.row]
+     nameSender = filterData[indexPath.row]
      
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "OpenDetailView" {
             if let indexPath = self.tableview.indexPathForSelectedRow {
                 let controller = segue.destination as! DetialViewVC
-                globalPass =  holder2[indexPath.row]
+                globalPass =  filterData[indexPath.row]
                 imagePass = image[indexPath.row]
                 controller.selectedName = globalPass
                     for item in holder {
@@ -104,7 +104,14 @@ class TableViewViewController: UIViewController ,UITableViewDataSource , UITable
             }
         }
     }
-        
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    filterData = searchText.isEmpty ? holder2 : holder2.filter({(dataString: String) -> Bool in
+    return dataString.range(of: searchText, options: .caseInsensitive) != nil
+    })
+    tableview.reloadData()
+    }
+    
     
     
     

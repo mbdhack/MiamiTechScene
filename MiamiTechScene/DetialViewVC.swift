@@ -18,17 +18,20 @@ class DetialViewVC: UIViewController {
     @IBOutlet weak var titleName: UILabel!
     @IBOutlet weak var websiteName: UILabel!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var phoneNumber: UIButton!
+    
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+   
+    // MARK: - life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(holderDetail)
         print(selectedName)
         setLabelData()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-       navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
-       tabBarController?.tabBar.barTintColor = UIColor.init(red: 0.212, green: 0.271, blue: 0.612, alpha: 1.00)
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         textView.layer.borderWidth = 0.5
         textView.layer.borderColor = borderColor.cgColor
@@ -37,10 +40,9 @@ class DetialViewVC: UIViewController {
     func setLabelData () {
     self.titleName.text = selectedName
     self.websiteName.text = holderDetailWebiste
-    self.phoneNumber.setTitle(holderDetialPhone,for: .normal)
+    self.phoneNumberLabel.text = holderDetialPhone
     self.textView.text = desc
    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -48,9 +50,4 @@ class DetialViewVC: UIViewController {
    
     // MARK: - Action Buttom
 
-    @IBAction func phoneNumberCall(_ sender: Any) {
-        let number = NSURL(string: holderDetialPhone)
-        UIApplication.shared.open(number as! URL, options: [:], completionHandler: nil)
-        print("\(holderDetialPhone)")
-    }
 }
